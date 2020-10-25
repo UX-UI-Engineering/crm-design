@@ -1,1 +1,0 @@
-APP.controller.address.load();

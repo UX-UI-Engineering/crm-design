@@ -1,8 +1,10 @@
 (() => {
+    let address;
+    
     // Inheriting AppController class
     APP.controller.address = _.assignIn({}, new AppController);
     
-    let address = APP.controller.address;
+    address = APP.controller.address;
     address.template = APP.view.address;
     address.load = () => {
         //let theTemplateScript = document.getElementById('hndl-address').innerHTML;
