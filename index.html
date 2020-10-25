@@ -496,6 +496,9 @@
         </div>
     </div>
 
+    <!-- Including Lodash.js -->
+    <script src="js/vendor/lodash.min.js"></script>
+
     <!-- Initializing global APP varibale. Based on MVC pattern -->
     <script>
         let APP = {
@@ -503,10 +506,20 @@
             model: {},
             controller: {},
         };
+
+        // Setting up a controller class
+        let AppController = function() {
+            this.template = null;
+            this.load = null;
+        }
     </script>
-    <!-- Incluing all Handlebar templates -->
+    <!-- Including all Handlebar templates -->
     <script src="components/atoms/address/template_address.js"></script>
-    <!-- End including all Handlebar templates -->
+    <!-- End including -->
+
+    <!-- Including all template controllers -->
+    <script src="components/atoms/address/controller_address.js"></script>
+    <!-- End include -->
     
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/vendor/handlebars-v4.7.6.js"></script>
@@ -515,6 +528,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <!-- REMOVE GA CODE -->
     <script>
         window.ga = function () {
             ga.q.push(arguments)
