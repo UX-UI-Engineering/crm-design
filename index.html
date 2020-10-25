@@ -25,6 +25,7 @@
 
 <body>
     <!-- Add your site or application content here -->
+    <div id="content-placeholder"></div>
     <div class="container">
         <div class="row">
             <div class="col-sm-2">
@@ -496,9 +497,37 @@
     </div>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/vendor/handlebars-v4.7.6.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <script id="address-template" type="text/x-handlebars-template">
+        <p>You can find me in {{city}}. My address is {{number}} {{street}}.</p>
+    </script>
+
+    <script>
+        let theTemplateScript = document.getElementById('address-template').innerHTML;
+        console.log(theTemplateScript);
+
+        // Compile the template
+        let theTemplate = Handlebars.compile(theTemplateScript);
+
+        // Define our data object
+        let context = {
+            "city": "London",
+            "street": "Baker Street",
+            "number": "221B"
+        };
+
+        // Pass our data to the template
+        let theCompiledHtml = theTemplate(context);
+
+        console.log(theCompiledHtml);
+        // Add the compiled html to the page
+        document.getElementById('content-placeholder').innerHTML = theCompiledHtml;
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
