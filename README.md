@@ -1,4 +1,9 @@
-# CrmDesign
+# CRM Design
+Implementing the UI of a dribbble project 'CRM Design' for learning purposes.
+
+Reference: https://dribbble.com/shots/14315259-CRM-design
+
+---
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
