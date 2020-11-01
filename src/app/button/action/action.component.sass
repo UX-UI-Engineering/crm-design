@@ -1,0 +1,25 @@
+@import "../../../variables"
+
+.button-action
+    position: relative
+    background-color: $athensGray
+    color: $white
+    width: 112px
+    height: 112px
+    text-align: center
+    vertical-align: middle
+    border-radius: 24px
+    z-index: 0
+
+    svg
+        position: relative
+        z-index: 2
+
+    &::after
+        content: ''
+        position: absolute
+        width: 56px
+        height: 56px
+        background-color: $blue
+        border-radius: 16px
+        z-index: 1

@@ -1,0 +1,34 @@
+@import "../../../variables"
+
+.sidebar
+    width: 100%
+
+    .sidebar__link
+        color: $darkGraySuit
+        font-size: 12px
+        margin: 4px 0
+
+        &.sidebar__link--active
+            position: relative
+            font-weight: 600
+            color: $blue
+
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                bottom: 0
+                left: -20px
+                width: 6px
+                border-radius: 2px
+                background-color: $blue
+
+            &::after
+                content: ''
+                background: linear-gradient(to right, $athensGray, #FFFFFF)
+                position: absolute
+                top: 0
+                bottom: 0
+                left: -20px
+                width: 100%
+                z-index: -1
