@@ -1,0 +1,40 @@
+@import "../../../variables"
+
+.table-filter
+    margin: 0 0 20px 0
+
+    svg
+        fill: $darkGraySuit
+
+    .table-title
+        margin: 0 20px 0 0
+        color: darken($darkGraySuit, 10%)
+
+    .filter-sort
+        font-size: 14px
+        height: 36px
+        border: 2px solid $athensGray
+        background-color: transparent
+        border-radius: 8px
+
+    .form-inline
+        margin: 0 10px 0 0
+        border: 2px solid $athensGray
+        padding: 0 20px
+        border-radius: 8px
+
+        input
+            border: none
+            background-color: transparent
+            font: $darkGraySuit
+            font-size: 14px
+
+            &[placeholder]
+                color: $darkGraySuit
+
+        input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus
+            outline: none !important
+            box-shadow: none

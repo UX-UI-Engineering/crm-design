@@ -16,8 +16,13 @@ export class RightComponent implements OnInit {
     }
 
     ngAfterViewInit(): void {
+        this.setcomponentHeight();
+    }
+
+    setcomponentHeight(): void {
+        const bottomPadding = 40;
         const windowHeight = window.innerHeight;
-        const requiredHeight = (windowHeight - 40) + "px";
+        const requiredHeight = `${(windowHeight - bottomPadding)}px`;
 
         this.renderer.setStyle(this.rightArea.nativeElement, "height", requiredHeight);
     }

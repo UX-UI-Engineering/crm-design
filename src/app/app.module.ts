@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { ActionComponent } from './button/action/action.component';
 import { SidebarComponent } from './navigation/sidebar/sidebar.component';
 import { RightComponent } from './area/right/right.component';
+import { FilterComponent } from './table/filter/filter.component';
+import { ContainerComponent } from './container/container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ActionComponent,
     SidebarComponent,
-    RightComponent
+    RightComponent,
+    FilterComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,
