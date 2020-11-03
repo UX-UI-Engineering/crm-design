@@ -9,6 +9,7 @@ import { RightComponent } from "./area/right/right.component";
 import { FilterComponent } from "./table/filter/filter.component";
 import { ContainerComponent } from "./container/container.component";
 import { TableActionsComponent } from "./table/table-actions/table-actions.component";
+import { TableComponent } from "./table/table/table.component";
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import { TableActionsComponent } from "./table/table-actions/table-actions.compo
         RightComponent,
         FilterComponent,
         ContainerComponent,
-        TableActionsComponent
+        TableActionsComponent,
+        TableComponent
     ],
     imports: [
         BrowserModule,
