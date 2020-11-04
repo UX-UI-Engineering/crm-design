@@ -26,11 +26,11 @@
         input
             border: none
             background-color: transparent
-            font: $darkGraySuit
+            color: $darkGraySuit
             font-size: 14px
 
-            &[placeholder]
-                color: $darkGraySuit
+            &::placeholder
+                color: lighten($darkGraySuit, 10%)
 
         input:focus,
         select:focus,
