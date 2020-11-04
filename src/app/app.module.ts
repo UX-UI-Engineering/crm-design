@@ -11,6 +11,7 @@ import { ContainerComponent } from "./container/container.component";
 import { TableActionsComponent } from "./table/table-actions/table-actions.component";
 import { TableComponent } from "./table/table/table.component";
 import { TableHeaderComponent } from './table/table-header/table-header.component';
+import { TableRowComponent } from './table/table-row/table-row.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { TableHeaderComponent } from './table/table-header/table-header.componen
         ContainerComponent,
         TableActionsComponent,
         TableComponent,
-        TableHeaderComponent
+        TableHeaderComponent,
+        TableRowComponent
     ],
     imports: [
         BrowserModule,
