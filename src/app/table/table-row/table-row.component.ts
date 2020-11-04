@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+/* eslint-disable @typescript-eslint/no-empty-function */
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
     selector: "[app-table-row]",
@@ -7,7 +8,11 @@ import { Component, OnInit } from "@angular/core";
 })
 export class TableRowComponent implements OnInit {
 
-    constructor() { }
+    @Input("tenant") tenant;
+
+    constructor() {
+        console.log(this.tenant);
+    }
 
     ngOnInit(): void {
     }

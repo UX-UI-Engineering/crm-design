@@ -1,6 +1,6 @@
 <table class="table table-sm app-table">
     <thead app-table-header></thead>
     <tbody>
-        <tr app-table-row *ngFor="let number of numbers"></tr>
+        <tr app-table-row *ngFor="let tenant of tenants" [tenant]="tenant"></tr>
     </tbody>
 </table>

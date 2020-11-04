@@ -1,12 +1,12 @@
 <th scope="row"><input type="checkbox" class="checkbox-rounded" /></th>
-<td>Jane Doe</td>
-<td>janedoe@gmail.com</td>
-<td>32</td>
-<td>Montclair, NJ 07042, USA</td>
-<td>$860</td>
-<td>Jennifer Doe</td>
+<td>{{tenant.name}}</td>
+<td>{{tenant.contact}}</td>
+<td>{{tenant.age}}</td>
+<td>{{tenant.property_address}}</td>
+<td>{{tenant.rent}}</td>
+<td>{{tenant.property_manager}}</td>
 <td>
-    <span class="badge badge-light app-table__badge">Basic</span>
+    <span class="badge badge-light app-table__badge">{{tenant.status}}</span>
     <button class="btn btn-sm btn-light">
         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor"
             xmlns="http://www.w3.org/2000/svg">
