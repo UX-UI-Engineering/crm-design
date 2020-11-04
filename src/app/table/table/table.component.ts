@@ -7,9 +7,9 @@ import { Component, OnInit } from "@angular/core";
     styleUrls: ["./table.component.sass"]
 })
 export class TableComponent implements OnInit {
-    loopString = "hello World";
+    loopString = "Hello World. What a great day!"; // use to run a loop 'n' times
 
-    tenants: Array<unknown> = [{
+    tenants = [{
         name: "Jane Doe",
         contact: "janedoe@gmail.com",
         age: 32,
