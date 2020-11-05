@@ -12,6 +12,7 @@ import { TableActionsComponent } from "./table/table-actions/table-actions.compo
 import { TableComponent } from "./table/table/table.component";
 import { TableHeaderComponent } from './table/table-header/table-header.component';
 import { TableRowComponent } from './table/table-row/table-row.component';
+import { TileComponent } from './tile/tile.component';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,8 @@ import { TableRowComponent } from './table/table-row/table-row.component';
         TableActionsComponent,
         TableComponent,
         TableHeaderComponent,
-        TableRowComponent
+        TableRowComponent,
+        TileComponent
     ],
     imports: [
         BrowserModule,

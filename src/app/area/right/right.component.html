@@ -2,43 +2,13 @@
     <!-- Row for stats tiles -->
     <div #rowTiles class="row">
         <div class="col-sm">
-            <div class="card">
-                <div class="card-body">
-                    <p class="card-text">
-                        Total Tenants
-                    </p>
-                    <h4 class="card-title">
-                        364
-                        <small class="float-right">4% &uarr;</small>
-                    </h4>
-                </div>
-            </div>
+            <app-tile title="Total Tenants" number="364" stat="4% &uarr;" statColor="green"></app-tile>
         </div>
         <div class="col-sm">
-            <div class="card">
-                <div class="card-body">
-                    <p class="card-text">
-                        Tours Scheduled
-                    </p>
-                    <h4 class="card-title">
-                        51
-                        <small class="float-right">1.5% &darr;</small>
-                    </h4>
-                </div>
-            </div>
+            <app-tile title="Tours Scheduled" number="51" stat="1.5% &darr;" statColor="red"></app-tile>
         </div>
         <div class="col-sm">
-            <div class="card">
-                <div class="card-body">
-                    <p class="card-text">
-                        Active Property Managers
-                    </p>
-                    <h4 class="card-title">
-                        9
-                        <small class="float-right">+4 more</small>
-                    </h4>
-                </div>
-            </div>
+            <app-tile title="Active Property Managers" number="9" stat="+4 more"></app-tile>
         </div>
         <div class="col-sm">
             <div class="media">
