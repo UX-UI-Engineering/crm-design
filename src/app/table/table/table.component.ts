@@ -19,7 +19,6 @@ export class TableComponent implements OnInit {
         status: "Basic"
     }];
 
-
     constructor() {
 
         // Preparing sample data

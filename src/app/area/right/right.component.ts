@@ -6,7 +6,10 @@ import { Component, ElementRef, OnInit, Renderer2, ViewChild } from "@angular/co
     styleUrls: ["./right.component.sass"]
 })
 export class RightComponent implements OnInit {
+    parentHeight: number;
+    rowTilesHeight: number;
 
+    @ViewChild("rowTiles") rowTiles: ElementRef<HTMLElement>;
     @ViewChild("rightArea") rightArea: ElementRef<HTMLElement>;
 
     constructor(private renderer: Renderer2) { }
@@ -16,15 +19,17 @@ export class RightComponent implements OnInit {
     }
 
     ngAfterViewInit(): void {
-        this.setcomponentHeight();
+        this.setComponentHeight();
+        this.rowTilesHeight = this.rowTiles.nativeElement.clientHeight;
     }
 
-    setcomponentHeight(): void {
+    setComponentHeight(): void {
         const bottomPadding = 40;
         const windowHeight = window.innerHeight;
-        const requiredHeight = `${(windowHeight - bottomPadding)}px`;
+        const requiredHeight = windowHeight - bottomPadding;
 
-        this.renderer.setStyle(this.rightArea.nativeElement, "height", requiredHeight);
+        this.parentHeight = requiredHeight;
+        this.renderer.setStyle(this.rightArea.nativeElement, "height", `${requiredHeight}px`);
     }
 
 }

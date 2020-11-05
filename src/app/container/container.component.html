@@ -1,5 +1,5 @@
-<div class="app-container">
-    <div class="row">
+<div #appContainer class="app-container">
+    <div #tableContainerHeader class="row">
         <div class="col d-flex justify-content-start">
             <app-filter></app-filter>
         </div>
@@ -10,7 +10,7 @@
 
     <!-- Row for data table -->
     <div class="row">
-        <div class="col-sm-12">
+        <div #tableContainer class="col-sm-12 app-container__table">
             <app-table></app-table>
         </div>
     </div>
