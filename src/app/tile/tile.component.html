@@ -1,9 +1,21 @@
-<div class="tile">
+<div class="tile tile--{{modifier}} flex-fill">
     <div class="d-flex flex-row">
         <div class="tile__heading">{{title}}</div>
     </div>
     <div class="d-flex flex-row justify-content-between align-items-center">
         <h4 class="card-title tile__text-primary tile__text--blue">{{number}}</h4>
+        <div *ngIf="modifier" class="tile__users-thumbnails d-flex flex-row">
+            <img src="https://randomuser.me/api/portraits/women/57.jpg" alt="manager_1"
+                class="rounded-circle tile__users-thumbnails__img">
+            <img src="https://randomuser.me/api/portraits/men/17.jpg" alt="manager_2"
+                class="rounded-circle tile__users-thumbnails__img">
+            <img src="https://randomuser.me/api/portraits/women/94.jpg" alt="manager_3"
+                class="rounded-circle tile__users-thumbnails__img">
+            <img src="https://randomuser.me/api/portraits/men/97.jpg" alt="manager_4"
+                class="rounded-circle tile__users-thumbnails__img">
+            <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="manager_5"
+                class="rounded-circle tile__users-thumbnails__img">
+        </div>
         <small class="tile__text-secondary tile__text--{{statColor}}">{{stat}}</small>
     </div>
 </div>

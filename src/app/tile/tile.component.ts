@@ -11,6 +11,7 @@ export class TileComponent implements OnInit {
     @Input("number") number: number;
     @Input("stat") stat: string;
     @Input("statColor") statColor: string;
+    @Input("modifier") modifier: string;
 
     constructor() { }
 

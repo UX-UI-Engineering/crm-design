@@ -6,6 +6,8 @@
     background: $white
     padding: 20px
     color: $darkGraySuit
+    min-width: 192px
+    max-height: 109px
 
     .tile__heading
         margin: 0 0 10px 0
@@ -29,3 +31,15 @@
 
     .tile__text--green
         color: $green
+
+    &.tile--users
+        min-width: 192px * 2
+
+        .tile__users-thumbnails
+            position: relative
+            right: -40px
+
+        .tile__users-thumbnails__img
+            height: 48px
+            width: 48px
+            margin: 0 -10px 0 -10px

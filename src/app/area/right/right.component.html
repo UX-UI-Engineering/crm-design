@@ -1,16 +1,10 @@
 <div #rightArea class="right-area">
     <!-- Row for stats tiles -->
     <div #rowTiles class="row">
-        <div class="col-sm">
+        <div class="col-sm d-flex flex-row justify-content-between">
             <app-tile title="Total Tenants" number="364" stat="4% &uarr;" statColor="green"></app-tile>
-        </div>
-        <div class="col-sm">
             <app-tile title="Tours Scheduled" number="51" stat="1.5% &darr;" statColor="red"></app-tile>
-        </div>
-        <div class="col-sm">
-            <app-tile title="Active Property Managers" number="9" stat="+4 more"></app-tile>
-        </div>
-        <div class="col-sm">
+            <app-tile title="Active Property Managers" number="9" stat="+4 more" modifier="users"></app-tile>
             <div class="media">
                 <div class="media-body">
                     <h5 class="mt-0 mb-1">Jennifer Doe</h5>
