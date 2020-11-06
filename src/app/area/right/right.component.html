@@ -1,17 +1,11 @@
 <div #rightArea class="right-area">
     <!-- Row for stats tiles -->
     <div #rowTiles class="row">
-        <div class="col-sm d-flex flex-row justify-content-between">
+        <div class="col-sm d-flex flex-row justify-content-between align-items-center">
             <app-tile title="Total Tenants" number="364" stat="4% &uarr;" statColor="green"></app-tile>
             <app-tile title="Tours Scheduled" number="51" stat="1.5% &darr;" statColor="red"></app-tile>
             <app-tile title="Active Property Managers" number="9" stat="+4 more" modifier="users"></app-tile>
-            <div class="media">
-                <div class="media-body">
-                    <h5 class="mt-0 mb-1">Jennifer Doe</h5>
-                    Admin.
-                </div>
-                <img src="https://via.placeholder.com/112" class="ml-3 rounded-circle" alt="...">
-            </div>
+            <app-user-dropdown></app-user-dropdown>
         </div>
     </div>
 

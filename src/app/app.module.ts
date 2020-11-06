@@ -13,6 +13,7 @@ import { TableComponent } from "./table/table/table.component";
 import { TableHeaderComponent } from './table/table-header/table-header.component';
 import { TableRowComponent } from './table/table-row/table-row.component';
 import { TileComponent } from './tile/tile.component';
+import { UserDropdownComponent } from './user-dropdown/user-dropdown.component';
 
 @NgModule({
     declarations: [
@@ -26,7 +27,8 @@ import { TileComponent } from './tile/tile.component';
         TableComponent,
         TableHeaderComponent,
         TableRowComponent,
-        TileComponent
+        TileComponent,
+        UserDropdownComponent
     ],
     imports: [
         BrowserModule,
